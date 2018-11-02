@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="Ethiopic">
+    <title>Amharic Typing Keyboard</title>
+    <meta name="description" content="Amharic Typing Keyboard enables you to type Amharic online without the need to install Amharic keyboard. Amharic typing is an online Amharic keyboard.  You can start by typing in the text box using your computer keyboard or by simply clicking on the virtual keyboard keys displayed above.">
+    <meta name="keywords" content="amharic typing, Amharic keyboard, Amharic keyboard software, Amharic typing software, type amharic, amharic type, amharic write, write in amharic, type amharic online, amharic geez, agerigna amharic keyboard, hahu amharic keyboard, amharic letters">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+          //TYPER
+          var display = document.getElementById("display");
+
+          $("button").click(function(){
+            display.value += this.name;
+          });
+          //TYPER
+
+          //COPYBUTTON
+          $(".copy").click(function(){
+            $("#display").select();
+            document.execCommand('copy');
+          });
+          //COPY BUTTON
+
+          //CLEAR button
+          $(".clear").click(function(){
+            display.value = "";
+          });
+          //CLEAR button
+
+
+          //BACKSPACE
+          var backspace = function() {
+
+          var rekensom  = document.getElementById('display').value;
+          document.getElementById('display').value=rekensom.substring(0,rekensom.length -1);
+
+          };
+          //BACKSPACE
+
+      });
+
+
+    </script>
+
+  </head>
+  <body>
+    <div class="body-wrap boxed-container">
+    <header class="site-header">
+
+        <div class="container">
+            <div class="site-header-inner">
+                <div class="brand header-brand">
+                    <h1 class="m-0">
+                        <a href="#">
+                          <img class= "logo" src="assets/amharic-typing-logo.png" alt="amharic-typing-keyboard-logo">
+                        </a>
+                    </h1>
+                </div>
+
+                <ul class="header-links list-reset m-0">
+                    <li>
+                        <a class="blog" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="button button-sm button-shadow" href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero text-light text-center">
+            <div class="container-sm">
+                <div class="hero-inner">
+                  <h1>Amharic Typing Keyboard</h1>
+                  <p>Amharic Typing Keyboard enables you to type Amharic online without the need to install Amharic keyboard. You can start by typing in the text box using your computer keyboard or by simply clicking on the virtual keyboard keys displayed above.</p>
+
+                    <div class="dis">
+                      <textarea id="display" placeholder="Type here..."></textarea>
+                      <br>
+                      <button type="button" class="copy">Copy</button>
+                      <button type="button" class="clear">Clear</button>
+
+
+                    <!--  <input type="button" onclick="backspace();" value="backspace" />   -->
+                      <br><br>
+
+
+                      <div class="keyboard">
+                        <div id="ha" class="key">
+                          <button name='&#4608;'>&#4608;</button>
+                          <button name='&#4609;'>&#4609;</button>
+                          <button name='&#4610;'>&#4610;</button>
+                          <button name='&#4611;'>&#4611;</button>
+                          <button name='&#4612;'>&#4612;</button>
+                          <button name='&#4613;'>&#4613;</button>
+                          <button name='&#4614;'>&#4614;</button>
+                        </div>
+                        <div id="le" class="key">
+                          <button name='&#4616;'>&#4616;</button>
+                          <button name='&#4617;'>&#4617;</button>
+                          <button name='&#4618;'>&#4618;</button>
+                          <button name='&#4619;'>&#4619;</button>
+                          <button name='&#4620;'>&#4620;</button>
+                          <button name='&#4621;'>&#4621;</button>
+                          <button name='&#4622;'>&#4622;</button>
+                        </div>
+                        <div id="hha" class="key">
+                          <button name='&#4624;'>&#4624;</button>
+                          <button name='&#4625;'>&#4625;</button>
+                          <button name='&#4626;'>&#4626;</button>
+                          <button name='&#4627;'>&#4627;</button>
+                          <button name='&#4628;'>&#4628;</button>
+                          <button name='&#4629;'>&#4629;</button>
+                          <button name='&#4630;'>&#4630;</button>
+                        </div>
+                        <div id="me" class="key">
+                          <button name='&#4632;'>&#4632;</button>
+                          <button name='&#4633;'>&#4633;</button>
+                          <button name='&#4634;'>&#4634;</button>
+                          <button name='&#4635;'>&#4635;</button>
+                          <button name='&#4636;'>&#4636;</button>
+                          <button name='&#4637;'>&#4637;</button>
+                          <button name='&#4638;'>&#4638;</button>
+                        </div>
+                        <div id="sze" class="key">
+                          <button name='&#4640;'>&#4640;</button>
+                          <button name='&#4641;'>&#4641;</button>
+                          <button name='&#4642;'>&#4642;</button>
+                          <button name='&#4643;'>&#4643;</button>
+                          <button name='&#4644;'>&#4644;</button>
+                          <button name='&#4645;'>&#4645;</button>
+                          <button name='&#4646;'>&#4646;</button>
+                        </div>
+                        <div id="re" class="key">
+                          <button name='&#4648;'>&#4648;</button>
+                          <button name='&#4649;'>&#4649;</button>
+                          <button name='&#4650;'>&#4650;</button>
+                          <button name='&#4651;'>&#4651;</button>
+                          <button name='&#4652;'>&#4652;</button>
+                          <button name='&#4653;'>&#4653;</button>
+                          <button name='&#4654;'>&#4654;</button>
+                        </div>
+                        <div id="se" class="key">
+                          <button name='&#4656;'>&#4656;</button>
+                          <button name='&#4657;'>&#4657;</button>
+                          <button name='&#4658;'>&#4658;</button>
+                          <button name='&#4659;'>&#4659;</button>
+                          <button name='&#4660;'>&#4660;</button>
+                          <button name='&#4661;'>&#4661;</button>
+                          <button name='&#4662;'>&#4662;</button>
+                        </div>
+                        <div id="she" class="key">
+                          <button name='&#4664;'>&#4664;</button>
+                          <button name='&#4665;'>&#4665;</button>
+                          <button name='&#4666;'>&#4666;</button>
+                          <button name='&#4667;'>&#4667;</button>
+                          <button name='&#4668;'>&#4668;</button>
+                          <button name='&#4669;'>&#4669;</button>
+                          <button name='&#4670;'>&#4670;</button>
+                        </div>
+                        <div id="qe" class="key">
+                          <button name='&#4672;'>&#4672;</button>
+                          <button name='&#4673;'>&#4673;</button>
+                          <button name='&#4674;'>&#4674;</button>
+                          <button name='&#4675;'>&#4675;</button>
+                          <button name='&#4676;'>&#4676;</button>
+                          <button name='&#4677;'>&#4677;</button>
+                          <button name='&#4678;'>&#4678;</button>
+                        </div>
+                        <div id="qhe" class="key">
+                          <button name='&#4688;'>&#4688;</button>
+                          <button name='&#4689;'>&#4689;</button>
+                          <button name='&#4690;'>&#4690;</button>
+                          <button name='&#4691;'>&#4691;</button>
+                          <button name='&#4692;'>&#4692;</button>
+                          <button name='&#4693;'>&#4693;</button>
+                          <button name='&#4694;'>&#4694;</button>
+                        </div>
+                        <div id="be" class="key">
+                          <button name='&#4704;'>&#4704;</button>
+                          <button name='&#4705;'>&#4705;</button>
+                          <button name='&#4706;'>&#4706;</button>
+                          <button name='&#4707;'>&#4707;</button>
+                          <button name='&#4708;'>&#4708;</button>
+                          <button name='&#4709;'>&#4709;</button>
+                          <button name='&#4710;'>&#4710;</button>
+                        </div>
+                        <div id="ve" class="key">
+                          <button name='&#4712;'>&#4712;</button>
+                          <button name='&#4713;'>&#4713;</button>
+                          <button name='&#4714;'>&#4714;</button>
+                          <button name='&#4715;'>&#4715;</button>
+                          <button name='&#4716;'>&#4716;</button>
+                          <button name='&#4717;'>&#4717;</button>
+                          <button name='&#4718;'>&#4718;</button>
+                        </div>
+                        <div id="te" class="key">
+                          <button name='&#4720;'>&#4720;</button>
+                          <button name='&#4721;'>&#4721;</button>
+                          <button name='&#4722;'>&#4722;</button>
+                          <button name='&#4723;'>&#4723;</button>
+                          <button name='&#4724;'>&#4724;</button>
+                          <button name='&#4725;'>&#4725;</button>
+                          <button name='&#4726;'>&#4726;</button>
+                        </div>
+                        <div id="ce" class="key">
+                          <button name='&#4728;'>&#4728;</button>
+                          <button name='&#4729;'>&#4729;</button>
+                          <button name='&#4730;'>&#4730;</button>
+                          <button name='&#4731;'>&#4731;</button>
+                          <button name='&#4732;'>&#4732;</button>
+                          <button name='&#4733;'>&#4733;</button>
+                          <button name='&#4734;'>&#4734;</button>
+                        </div>
+                        <div id="xe" class="key">
+                          <button name='&#4736;'>&#4736;</button>
+                          <button name='&#4737;'>&#4737;</button>
+                          <button name='&#4738;'>&#4738;</button>
+                          <button name='&#4739;'>&#4739;</button>
+                          <button name='&#4740;'>&#4740;</button>
+                          <button name='&#4741;'>&#4741;</button>
+                          <button name='&#4742;'>&#4742;</button>
+                        </div>
+                        <div id="ne" class="key">
+                          <button name='&#4752;'>&#4752;</button>
+                          <button name='&#4753;'>&#4753;</button>
+                          <button name='&#4754;'>&#4754;</button>
+                          <button name='&#4755;'>&#4755;</button>
+                          <button name='&#4756;'>&#4756;</button>
+                          <button name='&#4757;'>&#4757;</button>
+                          <button name='&#4758;'>&#4758;</button>
+                        </div>
+                        <div id="nye" class="key">
+                          <button name='&#4760;'>&#4760;</button>
+                          <button name='&#4761;'>&#4761;</button>
+                          <button name='&#4762;'>&#4762;</button>
+                          <button name='&#4763;'>&#4763;</button>
+                          <button name='&#4764;'>&#4764;</button>
+                          <button name='&#4765;'>&#4765;</button>
+                          <button name='&#4766;'>&#4766;</button>
+                        </div>
+                        <div id="a" class="key">
+                          <button name='&#4768;'>&#4768;</button>
+                          <button name='&#4769;'>&#4769;</button>
+                          <button name='&#4770;'>&#4770;</button>
+                          <button name='&#4771;'>&#4771;</button>
+                          <button name='&#4772;'>&#4772;</button>
+                          <button name='&#4773;'>&#4773;</button>
+                          <button name='&#4774;'>&#4774;</button>
+                        </div>
+                        <div id="ke" class="key">
+                          <button name='&#4776;'>&#4776;</button>
+                          <button name='&#4777;'>&#4777;</button>
+                          <button name='&#4778;'>&#4778;</button>
+                          <button name='&#4779;'>&#4779;</button>
+                          <button name='&#4780;'>&#4780;</button>
+                          <button name='&#4781;'>&#4781;</button>
+                          <button name='&#4782;'>&#4782;</button>
+                        </div>
+                        <div id="kxe" class="key">
+                          <button name='&#4792;'>&#4792;</button>
+                          <button name='&#4793;'>&#4793;</button>
+                          <button name='&#4794;'>&#4794;</button>
+                          <button name='&#4795;'>&#4795;</button>
+                          <button name='&#4796;'>&#4796;</button>
+                          <button name='&#4797;'>&#4797;</button>
+                          <button name='&#4798;'>&#4798;</button>
+                        </div>
+                        <div id="we" class="key">
+                          <button name='&#4808;'>&#4808;</button>
+                          <button name='&#4809;'>&#4809;</button>
+                          <button name='&#4810;'>&#4810;</button>
+                          <button name='&#4811;'>&#4811;</button>
+                          <button name='&#4812;'>&#4812;</button>
+                          <button name='&#4813;'>&#4813;</button>
+                          <button name='&#4814;'>&#4814;</button>
+                        </div>
+                        <div id="ae" class="key">
+                          <button name='&#4816;'>&#4816;</button>
+                          <button name='&#4817;'>&#4817;</button>
+                          <button name='&#4818;'>&#4818;</button>
+                          <button name='&#4819;'>&#4819;</button>
+                          <button name='&#4820;'>&#4820;</button>
+                          <button name='&#4821;'>&#4821;</button>
+                          <button name='&#4822;'>&#4822;</button>
+                        </div>
+                        <div id="ze" class="key">
+                          <button name='&#4824;'>&#4824;</button>
+                          <button name='&#4825;'>&#4825;</button>
+                          <button name='&#4826;'>&#4826;</button>
+                          <button name='&#4827;'>&#4827;</button>
+                          <button name='&#4828;'>&#4828;</button>
+                          <button name='&#4829;'>&#4829;</button>
+                          <button name='&#4830;'>&#4830;</button>
+                        </div>
+                        <div id="zhe" class="key">
+                          <button name='&#4832;'>&#4832;</button>
+                          <button name='&#4833;'>&#4833;</button>
+                          <button name='&#4834;'>&#4834;</button>
+                          <button name='&#4835;'>&#4835;</button>
+                          <button name='&#4836;'>&#4836;</button>
+                          <button name='&#4837;'>&#4837;</button>
+                          <button name='&#4838;'>&#4838;</button>
+                        </div>
+                        <div id="ye" class="key">
+                          <button name='&#4840;'>&#4840;</button>
+                          <button name='&#4841;'>&#4841;</button>
+                          <button name='&#4842;'>&#4842;</button>
+                          <button name='&#4843;'>&#4843;</button>
+                          <button name='&#4844;'>&#4844;</button>
+                          <button name='&#4845;'>&#4845;</button>
+                          <button name='&#4846;'>&#4846;</button>
+                        </div>
+                        <div id="de" class="key">
+                          <button name='&#4848;'>&#4848;</button>
+                          <button name='&#4849;'>&#4849;</button>
+                          <button name='&#4850;'>&#4850;</button>
+                          <button name='&#4851;'>&#4851;</button>
+                          <button name='&#4852;'>&#4852;</button>
+                          <button name='&#4853;'>&#4853;</button>
+                          <button name='&#4854;'>&#4854;</button>
+                        </div>
+                        <div id="dde" class="key">
+                          <button name='&#4856;'>&#4856;</button>
+                          <button name='&#4857;'>&#4857;</button>
+                          <button name='&#4858;'>&#4858;</button>
+                          <button name='&#4859;'>&#4859;</button>
+                          <button name='&#4860;'>&#4860;</button>
+                          <button name='&#4861;'>&#4861;</button>
+                          <button name='&#4862;'>&#4862;</button>
+                        </div>
+                        <div id="je" class="key">
+                          <button name='&#4864;'>&#4864;</button>
+                          <button name='&#4865;'>&#4865;</button>
+                          <button name='&#4866;'>&#4866;</button>
+                          <button name='&#4867;'>&#4867;</button>
+                          <button name='&#4868;'>&#4868;</button>
+                          <button name='&#4869;'>&#4869;</button>
+                          <button name='&#4870;'>&#4870;</button>
+                        </div>
+                        <div id="ge" class="key">
+                          <button name='&#4872;'>&#4872;</button>
+                          <button name='&#4873;'>&#4873;</button>
+                          <button name='&#4874;'>&#4874;</button>
+                          <button name='&#4875;'>&#4875;</button>
+                          <button name='&#4876;'>&#4876;</button>
+                          <button name='&#4877;'>&#4877;</button>
+                          <button name='&#4878;'>&#4878;</button>
+                        </div>
+                        <div id="te" class="key">
+                          <button name='&#4896;'>&#4896;</button>
+                          <button name='&#4897;'>&#4897;</button>
+                          <button name='&#4898;'>&#4898;</button>
+                          <button name='&#4899;'>&#4899;</button>
+                          <button name='&#4900;'>&#4900;</button>
+                          <button name='&#4901;'>&#4901;</button>
+                          <button name='&#4902;'>&#4902;</button>
+                        </div>
+                        <div id="che" class="key">
+                          <button name='&#4904;'>&#4904;</button>
+                          <button name='&#4905;'>&#4905;</button>
+                          <button name='&#4906;'>&#4906;</button>
+                          <button name='&#4907;'>&#4907;</button>
+                          <button name='&#4908;'>&#4908;</button>
+                          <button name='&#4909;'>&#4909;</button>
+                          <button name='&#4910;'>&#4910;</button>
+                        </div>
+                        <div id="phe" class="key">
+                          <button name='&#4912;'>&#4912;</button>
+                          <button name='&#4913;'>&#4913;</button>
+                          <button name='&#4914;'>&#4914;</button>
+                          <button name='&#4915;'>&#4915;</button>
+                          <button name='&#4916;'>&#4916;</button>
+                          <button name='&#4917;'>&#4917;</button>
+                          <button name='&#4918;'>&#4918;</button>
+                        </div>
+                        <div id="tse" class="key">
+                          <button name='&#4928;'>&#4928;</button>
+                          <button name='&#4929;'>&#4929;</button>
+                          <button name='&#4930;'>&#4930;</button>
+                          <button name='&#4931;'>&#4931;</button>
+                          <button name='&#4932;'>&#4932;</button>
+                          <button name='&#4933;'>&#4933;</button>
+                          <button name='&#4934;'>&#4934;</button>
+                        </div>
+                        <div id="fe" class="key">
+                          <button name='&#4936;'>&#4936;</button>
+                          <button name='&#4937;'>&#4937;</button>
+                          <button name='&#4938;'>&#4938;</button>
+                          <button name='&#4939;'>&#4939;</button>
+                          <button name='&#4940;'>&#4940;</button>
+                          <button name='&#4941;'>&#4941;</button>
+                          <button name='&#4942;'>&#4942;</button>
+                        </div>
+                        <div id="pe" class="key">
+                          <button name='&#4944;'>&#4944;</button>
+                          <button name='&#4945;'>&#4945;</button>
+                          <button name='&#4946;'>&#4946;</button>
+                          <button name='&#4947;'>&#4947;</button>
+                          <button name='&#4948;'>&#4948;</button>
+                          <button name='&#4949;'>&#4949;</button>
+                          <button name='&#4950;'>&#4950;</button>
+                        </div>
+
+
+
+
+
+
+                      </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer-inner">
+                <div class="brand footer-brand">
+                    <a href="#">
+                        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <title>Amharic Typing Keyboard</title>
+                            <defs>
+                                <radialGradient cy="0%" fx="50%" fy="0%" r="100%" id="logo-gradient-footer">
+                                    <stop stop-color="#00A2B8" offset="0%"/>
+                                    <stop stop-color="#00F9D2" offset="100%"/>
+                                </radialGradient>
+                            </defs>
+                            <path d="M16 32C7.163 32 0 24.837 0 16S7.163 0 16 0s16 7.163 16 16-7.163 16-16 16zm0-10a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" fill="url(#logo-gradient-footer)" fill-rule="evenodd"/>
+                        </svg>
+                    </a>
+                </div>
+                <ul class="footer-links list-reset">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="mailto:ibrahim1dev@gmail.com"?subject=feedback">Contact</a>
+                    </li>
+                </ul>
+                <ul class="footer-social-links list-reset">
+                    <li>
+                        <a href="https://facebook.com/selamjobs">
+                            <span class="screen-reader-text">Facebook</span>
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z" fill="#0EB3CE"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="screen-reader-text">Twitter</span>
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" fill="#0EB3CE"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="screen-reader-text">Google</span>
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z" fill="#0EB3CE"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer-copyright">&copy; 2018 Amharic Typing Keyboard, All rights reserved</div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
